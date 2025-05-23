@@ -50,6 +50,7 @@ const Header = () => {
                     <li><Link to="/competencias-tecnicas" className={getLinkClass('/competencias-tecnicas')} onClick={handleLinkClick}>Comp. Técnicas</Link></li>
                     <li><Link to="/habilidades-interpessoais" className={getLinkClass('/habilidades-interpessoais')} onClick={handleLinkClick}>Hab. Interpessoais</Link></li>
                     <li><Link to="/cursos-adicionais" className={getLinkClass('/cursos-adicionais')} onClick={handleLinkClick}>Cursos</Link></li>
+                    <li><Link to="/projetos" className={getLinkClass('/projetos')} onClick={handleLinkClick}>Projetos</Link></li>
                 </ul>
             </nav>
             <hr />

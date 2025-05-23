@@ -11,6 +11,7 @@ const Experiencia = lazy(() => import('./pages/Experiencia'));
 const CompetenciasTecnicas = lazy(() => import('./pages/CompetenciasTecnicas'));
 const HabilidadesInterpessoais = lazy(() => import('./pages/HabilidadesInterpessoais'));
 const CursosAdicionais = lazy(() => import('./pages/CursosAdicionais'));
+const Projetos = lazy(() => import('./pages/Projetos'));
 
 function App() {
     return (
@@ -24,9 +25,10 @@ function App() {
                     <Route path="/competencias-tecnicas" element={<CompetenciasTecnicas />} />
                     <Route path="/habilidades-interpessoais" element={<HabilidadesInterpessoais />} />
                     <Route path="/cursos-adicionais" element={<CursosAdicionais />} />
+                    <Route path="/projetos" element={<Projetos />} />
                 </Routes>
             </Suspense>
-            <Footer /> {/* Adicione o Footer aqui */}
+            <Footer />
         </Router>
     );
 }
