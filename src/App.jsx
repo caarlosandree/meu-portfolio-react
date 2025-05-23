@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { Suspense, lazy } from 'react'; // Adicionado Suspense e lazy
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
 import Footer from './components/Footer/Footer.jsx'; // Importe o Footer
 
