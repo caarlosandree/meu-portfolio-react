@@ -1,0 +1,51 @@
+/* src/styles/_base.css */
+
+/* Definições de Fontes */
+@font-face {
+    font-family: 'Sans';
+    src: url('../assets/fonts/Sans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sans';
+    src: url('../assets/fonts/Sans-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Sans';
+    src: url('../assets/fonts/Sans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SansVariable';
+    src: url('../assets/fonts/SansVariable.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+/* Estilos de Base */
+body {
+    font-family: 'Sans', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Estilo do container principal */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}

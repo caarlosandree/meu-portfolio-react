@@ -1,0 +1,8 @@
+/* src/styles/_utilities.css */
+
+.loading-fallback {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    color: #0056b3;
+}
