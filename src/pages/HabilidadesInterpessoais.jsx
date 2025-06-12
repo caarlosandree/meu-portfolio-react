@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import '../styles/HabilidadesInterpessoais.css'; // Importa o novo CSS
 
 const HabilidadesInterpessoais = () => {
     return (
@@ -10,7 +11,49 @@ const HabilidadesInterpessoais = () => {
             </Helmet>
             <section className="container">
                 <h2>Habilidades Interpessoais e de Gestão</h2>
-                {/* ... (conteúdo inalterado) ... */}
+                <p>Ao longo da minha trajetória, desenvolvi competências interpessoais e gerenciais essenciais para um ambiente colaborativo, produtivo e orientado a resultados:</p>
+
+                <div className="skills-grid">
+                    <div className="skill-card">
+                        <h4>Comunicação e Relacionamento:</h4>
+                        <ul>
+                            <li>Comunicação eficaz e escuta ativa</li>
+                            <li>Empatia e habilidade de relacionamento</li>
+                            <li>Negociação e atendimento ao cliente</li>
+                            <li>Colaboração e trabalho em equipe</li>
+                        </ul>
+                    </div>
+
+                    <div className="skill-card">
+                        <h4>Gestão e Liderança:</h4>
+                        <ul>
+                            <li>Liderança e visão estratégica</li>
+                            <li>Gestão do tempo e organização</li>
+                            <li>Condução de reuniões estratégicas</li>
+                            <li>Elaboração de planos de ação personalizados para clientes</li>
+                            <li>Capacitação contínua da equipe</li>
+                        </ul>
+                    </div>
+
+                    <div className="skill-card">
+                        <h4>Pensamento Crítico e Solução de Problemas:</h4>
+                        <ul>
+                            <li>Pensamento analítico e crítico</li>
+                            <li>Resolução de problemas com foco em resultados</li>
+                            <li>Criatividade e inovação</li>
+                            <li>Atenção aos detalhes</li>
+                        </ul>
+                    </div>
+
+                    <div className="skill-card">
+                        <h4>Adaptabilidade e Desenvolvimento Pessoal:</h4>
+                        <ul>
+                            <li>Proatividade e flexibilidade</li>
+                            <li>Capacidade de aprendizado contínuo</li>
+                            <li>Adaptabilidade e aprendizado ágil</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </>
     );
