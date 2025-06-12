@@ -1,0 +1,34 @@
+/* src/pages/CursosAdicionais.css */
+
+.courses-grid {
+    display: grid;
+    /* Cria colunas responsivas: 2 em telas médias, 1 em telas pequenas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espaço entre os cards */
+    margin-top: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h4 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.course-card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}

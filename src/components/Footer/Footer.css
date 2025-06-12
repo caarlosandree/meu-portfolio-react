@@ -1,7 +1,5 @@
-/* src/components/Footer/Footer.css */
-
 footer {
-    background-color: #f4f4f4;
+    background-color: var(--light-gray-bg);
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
@@ -10,7 +8,7 @@ footer {
 
 footer hr {
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border-color);
     margin: 20px 0;
 }
 
@@ -20,7 +18,7 @@ footer hr {
 }
 
 .contact-info h2 {
-    color: #0056b3;
+    color: var(--primary-color);
     margin-bottom: 0.5em;
     font-size: 1.2em;
 }
@@ -30,7 +28,7 @@ footer hr {
 }
 
 .contact-info a {
-    color: #0056b3;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -53,12 +51,12 @@ footer hr {
 }
 
 .social-links a {
-    color: #0056b3;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #004085;
+    color: var(--primary-color-darker);
 }

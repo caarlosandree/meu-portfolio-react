@@ -1,10 +1,9 @@
-// src/App.jsx
-import React, { Suspense, lazy } from 'react'; // Adicionado Suspense e lazy
+import React, { Suspense, lazy } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
-import Footer from './components/Footer/Footer.jsx'; // Importe o Footer
+import Layout from './components/Layout/Layout.jsx'; // Importe o Layout
 
-// Lazy load de componentes de página
+// Lazy load dos componentes de página
 const Home = lazy(() => import('./pages/Home'));
 const Formacao = lazy(() => import('./pages/Formacao'));
 const Experiencia = lazy(() => import('./pages/Experiencia'));
@@ -16,19 +15,19 @@ const Projetos = lazy(() => import('./pages/Projetos'));
 function App() {
     return (
         <Router>
-            {/* Fallback enquanto o componente da rota está sendo carregado */}
             <Suspense fallback={<div className="loading-fallback">Carregando conteúdo...</div>}>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/formacao" element={<Formacao />} />
-                    <Route path="/experiencia" element={<Experiencia />} />
-                    <Route path="/competencias-tecnicas" element={<CompetenciasTecnicas />} />
-                    <Route path="/habilidades-interpessoais" element={<HabilidadesInterpessoais />} />
-                    <Route path="/cursos-adicionais" element={<CursosAdicionais />} />
-                    <Route path="/projetos" element={<Projetos />} />
+                    <Route element={<Layout />}>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/formacao" element={<Formacao />} />
+                        <Route path="/experiencia" element={<Experiencia />} />
+                        <Route path="/competencias-tecnicas" element={<CompetenciasTecnicas />} />
+                        <Route path="/habilidades-interpessoais" element={<HabilidadesInterpessoais />} />
+                        <Route path="/cursos-adicionais" element={<CursosAdicionais />} />
+                        <Route path="/projetos" element={<Projetos />} />
+                    </Route>
                 </Routes>
             </Suspense>
-            <Footer />
         </Router>
     );
 }

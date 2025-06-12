@@ -1,14 +1,16 @@
-// src/pages/Formacao.jsx
 import React from 'react';
-import Header from '../components/Header/Header.jsx';
+import { Helmet } from 'react-helmet-async';
 
 const Formacao = () => {
     return (
         <>
-            <Header />
+            <Helmet>
+                <title>Formação - Carlos André Sabino</title>
+                <meta name="description" content="Detalhes sobre minha formação acadêmica em Redes de Computadores e Ciências da Computação." />
+            </Helmet>
             <section className="container">
                 <h2>Formação Acadêmica</h2>
-                <ul className="education-list"> {/* Adicione uma classe para estilização */}
+                <ul className="education-list">
                     <li>
                         <h3>Bacharelado em Redes de Computadores</h3>
                         <span>Centro Universitário Estácio, São José | jul 2011 – dez 2013</span>

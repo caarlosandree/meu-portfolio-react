@@ -1,12 +1,12 @@
 /* src/styles/_typography.css */
 
 h1, h2, h3 {
-    color: #0056b3;
+    color: var(--primary-color);
     margin-bottom: 0.5em;
 }
 
 h4 {
-    color: #0056b3;
+    color: var(--primary-color);
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-weight: 500;
