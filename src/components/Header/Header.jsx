@@ -1,7 +1,7 @@
-// src/components/Header.jsx
-import React, { useState } from 'react'; // Importe useState
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import carlosImg from '../../assets/img/carlos.jpg';
+import ThemeToggler from '../ThemeToggler/ThemeToggler';
 import './Header.css';
 
 const Header = () => {
@@ -27,6 +27,9 @@ const Header = () => {
             <div className="profile">
                 <img src={carlosImg} alt="Foto de Carlos André Sabino" className="profile-img" />
                 <h1>Carlos André Sabino</h1>
+                <div className="header-actions">
+                    <ThemeToggler />
+                </div>
             </div>
             <nav>
                 {/* Botão para o menu hambúrguer, visível apenas em telas pequenas via CSS */}

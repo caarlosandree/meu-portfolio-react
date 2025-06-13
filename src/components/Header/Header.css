@@ -185,3 +185,9 @@ nav ul.nav-menu li a:hover {
         right: 10px;
     }
 }
+
+.header-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

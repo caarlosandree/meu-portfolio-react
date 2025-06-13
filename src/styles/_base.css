@@ -1,5 +1,3 @@
-/* src/styles/_base.css */
-
 /* Definições de Fontes */
 @font-face {
     font-family: 'Sans';
@@ -26,12 +24,32 @@
     font-weight: 100 900;
 }
 
+:root {
+    /* Tema Claro (Padrão) */
+    --primary-color: #0056b3;
+    --primary-color-darker: #004085;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --card-background-color: #fff;
+    --border-color: #ccc;
+}
+
+/* Tema Escuro */
+[data-theme='dark'] {
+    --primary-color: #64b5f6; /* Um azul mais claro e vibrante */
+    --primary-color-darker: #42a5f5;
+    --text-color: #e0e0e0; /* Texto quase branco */
+    --background-color: #121212; /* Fundo escuro */
+    --card-background-color: #1e1e1e; /* Fundo dos cards um pouco mais claro */
+    --border-color: #424242;
+}
+
 /* Estilos de Base */
 body {
     font-family: 'Sans', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: var(--light-gray-bg);
+    background-color: var(--background-color);
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -40,7 +58,7 @@ body {
 }
 
 .container {
-    background-color: var(--white-bg);
+    background-color: var(--card-background-color);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
