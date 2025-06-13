@@ -23,6 +23,7 @@
 }
 
 .course-card h4 {
+    color: #0056b3;
     margin-top: 0;
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
