@@ -1,3 +1,5 @@
+/* src/pages/Formacao.css */
+
 .timeline {
     position: relative;
     max-width: 700px;
@@ -13,7 +15,7 @@
     left: 20px;
     height: 100%;
     width: 3px;
-    background-color: #e0e0e0;
+    background-color: var(--border-color); /* Ajustado */
 }
 
 .timeline-item {
@@ -25,32 +27,34 @@
 /* O ponto na linha do tempo */
 .timeline-dot {
     position: absolute;
-    left: 8px; /* (20px do padding do .timeline - 12px de metade da largura do ponto) */
+    left: 8px;
     top: 5px;
     width: 25px;
     height: 25px;
     background-color: var(--primary-color);
-    border: 3px solid #fff;
+    border: 3px solid var(--background-color); /* Ajustado para se mesclar com o fundo da página */
     border-radius: 50%;
-    z-index: 1; /* Para ficar sobre a linha */
+    z-index: 1;
 }
 
 .timeline-content {
-    background-color: #f9f9f9;
+    background-color: var(--card-background-color); /* Ajustado */
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);        /* Ajustado */
 }
 
 .timeline-content h3 {
     margin: 0 0 5px 0;
     font-size: 1.3em;
+    color: var(--primary-color); /* Ajustado para consistência */
 }
 
 .timeline-content .timeline-date {
     font-size: 0.9em;
     font-weight: bold;
-    color: #555;
+    color: var(--text-color); /* Ajustado */
+    opacity: 0.8;             /* Adicionado para diferenciar */
     display: block;
     margin-bottom: 10px;
 }

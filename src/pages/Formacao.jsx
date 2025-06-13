@@ -15,7 +15,6 @@ const Formacao = () => {
                 <div className="timeline">
                     {/* Item da Timeline 1 */}
                     <div className="timeline-item">
-                        <div className="timeline-dot"></div>
                         <div className="timeline-content">
                             <h3>Bacharelado em Ciências da Computação</h3>
                             <span className="timeline-date">jan 2025 – atualmente</span>
@@ -24,7 +23,6 @@ const Formacao = () => {
                     </div>
                     {/* Item da Timeline 2 */}
                     <div className="timeline-item">
-                        <div className="timeline-dot"></div>
                         <div className="timeline-content">
                             <h3>Técnologo em Redes de Computadores</h3>
                             <span className="timeline-date">jul 2011 – dez 2013</span>
