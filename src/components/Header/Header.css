@@ -18,13 +18,11 @@ header hr {
 .profile-img {
     width: 200px;
     height: 200px;
-    border-style: solid;
     border-radius: 50%;
-    border-color: black;
-    border-width: 10px;
+    object-fit: cover;
     display: block;
     margin: 0 auto 15px auto;
-    object-fit: cover;
+    box-shadow: 0 0 0 5px var(--background-color), 0 0 0 9px var(--primary-color);
 }
 
 header h1 {

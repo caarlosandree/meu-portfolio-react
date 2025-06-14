@@ -1,72 +1,35 @@
-/* src/pages/Formacao.css */
-
-.timeline {
-    position: relative;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 0 20px;
+.education-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
-/* A linha vertical central */
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 20px;
-    height: 100%;
-    width: 3px;
-    background-color: var(--border-color); /* Ajustado */
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 40px;
-    padding-left: 50px; /* Espaço para a linha e o ponto */
-}
-
-/* O ponto na linha do tempo */
-.timeline-dot {
-    position: absolute;
-    left: 8px;
-    top: 5px;
-    width: 25px;
-    height: 25px;
-    background-color: var(--primary-color);
-    border: 3px solid var(--background-color); /* Ajustado para se mesclar com o fundo da página */
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-content {
-    background-color: var(--card-background-color); /* Ajustado */
-    padding: 20px;
+.education-block {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--primary-color);
+    padding: 25px;
     border-radius: 8px;
-    border: 1px solid var(--border-color);        /* Ajustado */
 }
-
-.timeline-content h3 {
+.education-block h3 {
     margin: 0 0 5px 0;
-    font-size: 1.3em;
-    color: var(--primary-color); /* Ajustado para consistência */
+    font-size: clamp(1.4em, 2.5vw, 1.8em);
+    color: var(--primary-color);
 }
-
-.timeline-content .timeline-date {
-    font-size: 0.9em;
-    font-weight: bold;
-    color: var(--text-color); /* Ajustado */
-    opacity: 0.8;             /* Adicionado para diferenciar */
-    display: block;
-    margin-bottom: 10px;
-}
-
-.timeline-content p {
-    margin: 0;
+.education-block .education-institution {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
     font-style: italic;
 }
-
-/* Media query para telas menores */
-@media (max-width: 768px) {
-    .timeline {
-        padding: 0 10px;
-    }
+.education-block .education-period {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+/* Estilo para a nova descrição */
+.education-block .education-description {
+    margin: 15px 0 0 0;
+    font-size: 1em;
+    line-height: 1.6;
 }

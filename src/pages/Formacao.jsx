@@ -1,6 +1,7 @@
-// src/pages/Formacao.jsx
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
+import { formacaoData } from '../data/formacao.js';
 import '../styles/Formacao.css';
 
 const Formacao = () => {
@@ -8,28 +9,25 @@ const Formacao = () => {
         <>
             <Helmet>
                 <title>Formação - Carlos André Sabino</title>
-                <meta name="description" content="Minha formação acadêmica, apresentada em uma linha do tempo, incluindo Redes de Computadores e o curso atual de Ciências da Computação." />
+                <meta name="description" content="Minha formação acadêmica, incluindo Redes de Computadores e o curso atual de Ciências da Computação." />
             </Helmet>
             <section className="container">
                 <h2>Formação Acadêmica</h2>
-                <div className="timeline">
-                    {/* Item da Timeline 1 */}
-                    <div className="timeline-item">
-                        <div className="timeline-content">
-                            <h3>Bacharelado em Ciências da Computação</h3>
-                            <span className="timeline-date">jan 2025 – atualmente</span>
-                            <p>Centro Universitário Estácio, São José</p>
+                <motion.div
+                    className="education-container"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    {formacaoData.map((item) => (
+                        <div className="education-block" key={item.id}>
+                            <h3>{item.curso}</h3>
+                            <p className="education-institution">{item.instituicao}</p>
+                            <span className="education-period">{item.periodo}</span>
+                            <p className="education-description">{item.descricao}</p> {/* DESCRIÇÃO ADICIONADA AQUI */}
                         </div>
-                    </div>
-                    {/* Item da Timeline 2 */}
-                    <div className="timeline-item">
-                        <div className="timeline-content">
-                            <h3>Técnologo em Redes de Computadores</h3>
-                            <span className="timeline-date">jul 2011 – dez 2013</span>
-                            <p>Centro Universitário Estácio, São José</p>
-                        </div>
-                    </div>
-                </div>
+                    ))}
+                </motion.div>
             </section>
         </>
     );
