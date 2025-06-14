@@ -2,21 +2,12 @@
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Vitest](https://img.shields.io/badge/vitest-%236E9F18.svg?style=for-the-badge&logo=vitest&logoColor=white)
 
 Este repositório contém o código-fonte do meu portfólio pessoal, uma Single Page Application (SPA) moderna construída para apresentar minhas qualificações, experiências e projetos. O projeto foi desenvolvido com foco em componentização, boas práticas de engenharia de software, performance e uma experiência de usuário rica e interativa.
 
 **➡️ Veja a versão ao vivo:** [**https://caarlosandree.github.io/meu-portfolio-react/**](https://caarlosandree.github.io/meu-portfolio-react/)
-*(Substitua pelo seu nome de usuário se for diferente)*
-
----
-
-## 📸 Demonstração
-
-*(Sugestão: Grave um GIF curto mostrando a navegação, as animações e a troca de tema, e coloque aqui. Isso causa um impacto visual imediato!)*
-
-![Gif de demonstração do portfólio]
 
 ---
 
