@@ -61,6 +61,7 @@
 .icon-container.vercel-icon { color: #000000; }
 .icon-container.heroku-icon { color: #430098; }
 .icon-container.linux-icon { color: #FCC624; }
+.icon-container.mongodb-icon { color: #47A248; }
 
 /* Ajuste para ícones escuros no tema escuro */
 [data-theme='dark'] .icon-container.flask-icon,
