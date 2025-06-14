@@ -1,0 +1,70 @@
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 40px 0;
+}
+
+.skills-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 30px 25px; /* Aumentado o espaçamento vertical */
+    justify-items: center;
+}
+
+.skill-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Estilo base para o container do ícone */
+.skill-icon-item .icon-container {
+    font-size: 3rem; /* 48px */
+    color: var(--text-color); /* Cor padrão/fallback */
+    transition: transform 0.3s ease;
+}
+
+.skill-icon-item:hover .icon-container {
+    transform: scale(1.15) translateY(-5px);
+}
+
+.skill-icon-item p {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* --- Cores Específicas das Marcas --- */
+.icon-container.html-icon { color: #E34F26; }
+.icon-container.css-icon { color: #1572B6; }
+.icon-container.js-icon { color: #F7DF1E; }
+.icon-container.ts-icon { color: #3178C6; }
+.icon-container.react-icon { color: #61DAFB; }
+.icon-container.angular-icon { color: #DD0031; }
+.icon-container.vite-icon { color: #646CFF; }
+.icon-container.webpack-icon { color: #8DD6F9; }
+.icon-container.node-icon { color: #339933; }
+.icon-container.python-icon { color: #3776AB; }
+.icon-container.flask-icon { color: #000000; }
+.icon-container.django-icon { color: #092E20; }
+.icon-container.csharp-icon { color: #512BD4; }
+.icon-container.cpp-icon { color: #00599C; }
+.icon-container.postgres-icon { color: #4169E1; }
+.icon-container.sqlserver-icon { color: #CC2927; }
+.icon-container.db2-icon { color: #0062BE; }
+.icon-container.git-icon { color: #F05032; }
+.icon-container.docker-icon { color: #2496ED; }
+.icon-container.aws-icon { color: #FF9900; }
+.icon-container.azure-icon { color: #0078D4; }
+.icon-container.vercel-icon { color: #000000; }
+.icon-container.heroku-icon { color: #430098; }
+.icon-container.linux-icon { color: #FCC624; }
+
+/* Ajuste para ícones escuros no tema escuro */
+[data-theme='dark'] .icon-container.flask-icon,
+[data-theme='dark'] .icon-container.django-icon,
+[data-theme='dark'] .icon-container.vercel-icon {
+    color: #FFFFFF;
+}

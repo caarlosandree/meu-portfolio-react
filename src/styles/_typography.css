@@ -1,9 +1,22 @@
 /* src/styles/_typography.css */
 
 h1, h2, h3 {
-    color: #0056b3;
+    color: var(--primary-color); /* Usando a variável que já criamos */
     margin-bottom: 0.5em;
+    font-weight: 500;
 }
+
+/* Aplicando clamp() para h1 e h2 de forma geral */
+h1 {
+    /* Mínimo de 1.5em, ideal de 1.2em + 1.5vw, máximo de 2.2em */
+    font-size: clamp(1.5em, 1.2em + 1.5vw, 2.2em);
+}
+
+h2 {
+    /* Mínimo de 1.4em, ideal de 1.3em + 1vw, máximo de 1.8em */
+    font-size: clamp(1.4em, 1.3em + 1vw, 1.8em);
+}
+
 
 h4 {
     color: var(--primary-color);
@@ -43,21 +56,12 @@ section p {
     margin-bottom: 1em;
 }
 
-/* Títulos específicos para mobile */
+/* Media queries agora são mais simples */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    section h2 {
-        font-size: 1.5em;
-    }
+    /* As regras de h1 e h2 foram removidas daqui */
     section p, section li {
         font-size: 1em;
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-}
+/* A media query para 480px foi totalmente removida pois não é mais necessária */

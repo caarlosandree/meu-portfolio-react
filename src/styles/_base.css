@@ -4,6 +4,7 @@
     src: url('../assets/fonts/Sans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -47,6 +48,7 @@
 /* Estilos de Base */
 body {
     font-family: 'Sans', sans-serif;
+    font-weight: 300;
     line-height: 1.6;
     margin: 20px;
     background-color: var(--background-color);
