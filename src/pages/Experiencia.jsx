@@ -28,29 +28,34 @@ const Experiencia = () => {
                     animate="visible"
                     variants={listVariants}
                 >
-                    {experienciaData.map((exp) => (
+                    {(experienciaData || []).map((exp) => (
                         <motion.div key={exp.id} className="experience-card" variants={itemVariants}>
-                            {/* O cabeçalho do card foi simplificado */}
                             <h3>{exp.cargo}</h3>
                             <p className="experience-company">{exp.empresa} – {exp.local} | {exp.periodo}</p>
 
                             <div className="experience-details">
-                                <h5>Responsabilidades:</h5>
-                                <ul>
-                                    {exp.responsabilidades.map((item, index) => <li key={index}>{item}</li>)}
-                                </ul>
+                                {exp.responsabilidades?.length > 0 && (
+                                    <>
+                                        <h5>Responsabilidades:</h5>
+                                        <ul>
+                                            {exp.responsabilidades.map((item, index) => <li key={index}>{item}</li>)}
+                                        </ul>
+                                    </>
+                                )}
 
                                 {exp.subPosition && (
                                     <div className="sub-position">
                                         <h4>{exp.subPosition.cargo}</h4>
                                         <p className="experience-company">{exp.subPosition.periodo}</p>
                                         <ul>
-                                            {exp.subPosition.responsabilidades.map((item, index) => <li key={index}>{item}</li>)}
+                                            {exp.subPosition.responsabilidades?.map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
                                         </ul>
                                     </div>
                                 )}
 
-                                {exp.conquistas && exp.conquistas.length > 0 && (
+                                {exp.conquistas?.length > 0 && (
                                     <div className="achievements">
                                         <h5>⭐ Principais Conquistas:</h5>
                                         <ul>
@@ -60,11 +65,13 @@ const Experiencia = () => {
                                 )}
                             </div>
 
-                            <div className="skills-tags">
-                                {exp.habilidades.map((habilidade, index) => (
-                                    <span key={index} className="skill-tag">{habilidade}</span>
-                                ))}
-                            </div>
+                            {exp.habilidades?.length > 0 && (
+                                <div className="skills-tags">
+                                    {exp.habilidades.map((habilidade, index) => (
+                                        <span key={index} className="skill-tag">{habilidade}</span>
+                                    ))}
+                                </div>
+                            )}
                         </motion.div>
                     ))}
                 </motion.div>
